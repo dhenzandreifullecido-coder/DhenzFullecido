@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dash & Arrive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page" id="top">
+
+  <!-- NAV -->
+  <header class="nav">
+    <img class="logo" src="images/logo.png" alt="DA logo">
+    <a href="#top" class="nav-btn active" data-link>HOME</a>
+    <a href="#about" class="nav-btn" data-link>ABOUT US</a>
+    <a href="#contact" class="nav-btn" data-link>CONTACTS</a>
+    <div class="avatar">D</div>
+  </header>
+
+  <!-- HERO -->
+  <h1 class="title"><span>DASH</span> <b>&amp;</b> <span>ARRIVE</span></h1>
+  <a href="#ride" class="get-started"><span>GET STARTED</span></a>
+
+  <!-- RIDE -->
+  <section id="ride">
+    <div class="pill pill-ride"><span>RIDE</span></div>
+    <button class="arrow left" id="prev" aria-label="Previous"></button>
+    <button class="arrow right" id="next" aria-label="Next"></button>
+    <div class="carousel" id="carousel">
+      <figure class="card" data-name="JoyRide"><img src="images/joyride.png" alt="JoyRide"><figcaption>JoyRide</figcaption></figure>
+      <figure class="card" data-name="GRAB"><img src="images/grab.png" alt="Grab"><figcaption>GRAB</figcaption></figure>
+      <figure class="card" data-name="MOVE IT"><img src="images/moveit.png" alt="Move It"><figcaption>MOVE IT</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="pill pill-about"><span>ABOUT</span></div>
+
+    <img class="photo driver" src="images/driver.png" alt="Driver">
+    <span class="role r-driver">Driver</span>
+    <div class="info i-driver">
+      <p class="name">Dhenz Andrei Fullecido<br>19 years old</p>
+      <p class="addr">Paudpod,Botolan<br>March 21, 2007</p>
+    </div>
+
+    <img class="photo passenger" src="images/passenger.png" alt="Passenger">
+    <span class="role r-pass">Passenger</span>
+    <div class="info i-pass">
+      <p class="name">Curt Justine Ebilane<br>23 years old</p>
+      <p class="addr">Palanginan,Iba<br>September 19, 2003</p>
+    </div>
+
+    <p class="pinned">Pinned Location<br>Purok 4, Tampo, Botolan,<br>Zambales</p>
+    <div class="map" id="map">
+      <svg viewBox="0 0 472 280" preserveAspectRatio="none" aria-hidden="true">
+        <g stroke="#d6d6d6" stroke-width="5" fill="none">
+          <path d="M-10 70 L480 -20"/><path d="M-10 175 L480 70"/><path d="M-10 280 L480 170"/>
+          <path d="M100 -10 L40 290"/><path d="M230 -10 L170 290"/><path d="M370 -10 L310 290"/><path d="M500 -10 L440 290"/>
+        </g>
+      </svg>
+      <svg class="pin" viewBox="0 0 60 80"><path d="M30 4C16 4 6 14 6 28c0 18 24 46 24 46s24-28 24-46C54 14 44 4 30 4z" fill="none" stroke="#777" stroke-width="3"/><circle cx="30" cy="28" r="8" fill="none" stroke="#777" stroke-width="3"/></svg>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="pill pill-contact"><span>CONTACT</span></div>
+    <div class="grey-box top"></div>
+    <div class="grey-box bottom" id="upload" title="Upload">
+      <svg viewBox="0 0 220 180" fill="none" stroke="#000" stroke-width="5">
+        <path d="M30 20 C20 120 60 165 110 165 C160 165 200 120 190 20"/>
+        <path d="M110 135 V25 M88 50 L110 25 L132 50"/>
+      </svg>
+    </div>
+
+    <form id="contactForm" novalidate>
+      <input type="text" name="name" aria-label="Name">
+      <input type="email" name="email" aria-label="Email">
+      <input type="text" name="message" aria-label="Message">
+      <button type="submit" class="send">SEND</button>
+    </form>
+
+    <ul class="socials">
+      <li><img src="images/facebook.png" alt="Facebook"><span>Dhenz Andrei</span></li>
+      <li><img src="images/instagram.png" alt="Instagram"><span>drei_pizz</span></li>
+      <li><img src="images/tiktok.png" alt="TikTok"><span>dreiiiiiii</span></li>
+      <li><img src="images/phone.png" alt="Phone"><span>09912493751</span></li>
+    </ul>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
